@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 from .models import Calendar
@@ -10,12 +9,12 @@ def index(request):
     if len(calendar_entries) == 0:
         return render(request, "app/app_not_started.html")
 
-    return render(request, "app/index.html", {})
+    return render(request, "app/wip.html", {})
 
 
 def db(request):
-    return HttpResponse("calendar stored in DB")
+    return render(request, "app/wip.html", {})
 
 
 def alerts(request):
-    return HttpResponse("list of alerts emitted")
+    return render(request, "app/wip.html", {})
