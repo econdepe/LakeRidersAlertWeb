@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lakeriders-alert-web"
+version = "0.1.0"
+description = "Web interface for LakeRiders Alert"
+authors = ["econdepe <econdepe@protonmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.1.1"
+ruff = "^0.6.3"
+pre-commit = "^3.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
