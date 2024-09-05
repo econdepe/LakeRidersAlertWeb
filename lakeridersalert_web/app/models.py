@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Session(models.Model):
-    datetime = models.DateTimeField("session date")
+    datetime = models.CharField("session date", max_length=13)
     members = models.CharField("session members", max_length=200)
 
 
