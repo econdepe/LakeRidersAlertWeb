@@ -1,0 +1,27 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'app/style.css' %}">
+
+<h1 style="text-align: center;">
+    Current state of the DB
+</h1>
+<div style="display: flex;justify-content: center;">
+    <table>
+    <thead>
+      <tr>
+        <th scope="col">Date&time</th>
+        <th scope="col">Members</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for session in sessions %}
+        <tr>
+            <td>{{session.datetime}}</td>
+            <td>{{session.members}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+
+

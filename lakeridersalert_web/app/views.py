@@ -9,12 +9,17 @@ def index(request):
     if len(calendar_entries) == 0:
         return render(request, "app/app_not_started.html")
 
-    return render(request, "app/wip.html", {})
+    return render(
+        request,
+        "app/wip.html",
+    )
 
 
 def db(request):
-    return render(request, "app/wip.html", {})
+    context = {"sessions": Session.objects.all()}
+
+    return render(request, "app/db.html", context)
 
 
 def alerts(request):
-    return render(request, "app/wip.html", {})
+    return render(request, "app/wip.html")
