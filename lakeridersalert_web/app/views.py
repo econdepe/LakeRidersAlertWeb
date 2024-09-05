@@ -1,10 +1,10 @@
 from django.shortcuts import render
 
-from .models import Calendar
+from .models import Session
 
 
 def index(request):
-    calendar_entries = Calendar.objects.all()
+    calendar_entries = Session.objects.all()
 
     if len(calendar_entries) == 0:
         return render(request, "app/app_not_started.html")
