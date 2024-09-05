@@ -7,7 +7,7 @@ class Session(models.Model):
 
 
 class Alert(models.Model):
-    calendar_entry = models.ForeignKey(Session, on_delete=models.PROTECT)
+    session = models.ForeignKey(Session, on_delete=models.PROTECT)
     timestamp = models.PositiveIntegerField("alert UNIX timestamp")
     count = models.PositiveSmallIntegerField("number of free slots")
-    members = models.CharField("members dropped", max_length=200)
+    # members = models.CharField("members dropped", max_length=200)
