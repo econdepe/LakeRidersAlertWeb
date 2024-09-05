@@ -5,7 +5,7 @@ exclude = [
     ".ruff_cache",
     ".venv",
     "tests",
-    "app/migrations"
+    "lakeridersalert_web/app/migrations"
 ]
 
 line-length = 88
