@@ -14,6 +14,7 @@ requests = "^2.32.3"
 celery = "^5.4.0"
 redis = "^5.0.8"
 django-celery-beat = "^2.7.0"
+pendulum = "^3.0.0"
 
 
 [build-system]
