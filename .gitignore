@@ -2,6 +2,7 @@
 *.egg-info/
 dist/
 
+**/celerybeat-schedule
 .env
 *.pyc
 db.sqlite3

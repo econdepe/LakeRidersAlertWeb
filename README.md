@@ -26,4 +26,4 @@ python -m celery -A lakeridersalert_web worker -l info
 python -m celery -A lakeridersalert_web beat -l info
 ```
 
-Now you can navigate to `http://localhost:8000/app/`. If everything has gone alright you should see the sessions of the current week, together with a list of the last five alerts emitted. At `{APP_URL}/db` you can find the current state of the DB, while `{APP_URL}/alerts` contains a list of all emitted alerts.
+Now you can navigate to the app main page `{APP_URL}` by adding `/app` to your local Django server address (typically `http://localhost:8000/app/`). If everything has gone alright you should see the sessions of the current week, together with a list of the last five alerts emitted. At `{APP_URL}/db` you can find the current state of the DB, while `{APP_URL}/alerts` contains a list of all emitted alerts.
